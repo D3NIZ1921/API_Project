@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Cocktail</title>
+    <style>
+        img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="<%= imageUrl %>" alt="Cocktail Image">
+    <div class="content">
+        <h1><%= cocktail.strDrink %></h1>
+        <p><%= cocktail.strInstructions %></p>
+        <p>Category: <%= cocktail.strCategory %></p>
+        <p>Glass: <%= cocktail.strGlass %></p>
+        <p>Alcoholic: <%= cocktail.strAlcoholic %></p>
+    </div>
+</body>
+</html>
